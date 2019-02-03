@@ -1,0 +1,222 @@
+html {
+    box-sizing: border-box; 
+ }
+ 
+ *,
+ *::before,
+ *::after {
+     box-sizing: inherit;
+ }
+
+ img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+ }
+
+ .clearfix::after {
+     content:'';
+     display: table;
+     clear: both;
+ }
+
+ .container {
+     width: 1170px;
+     margin: 0 auto;
+ }
+
+ .page-header {
+     margin-top: 42px;
+     height: 102px;
+ }
+
+ /* site navigation */ 
+
+
+.site-navigation {
+    width: 492px;
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-top: 2px;
+    list-style: none;
+} 
+
+.site-navigation li {
+    float: left;
+    margin-left: 28px;
+}
+
+.site-navigation li:first-child {
+    margin-left: 0;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none; 
+    color: black;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.site-navigation ul {
+    font-family:  'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.site-logo {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.site-navigation a{
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.site-navigation a:hover {
+    color: #1abc9c;
+}
+
+/*featured title*/
+
+.first-title {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 300px;
+    font-family:   'Ubuntu', sans-serif;
+    color: #717171;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.first-line  {
+    background-color: #1abc9c;
+    width: 162px;
+    height: 5px;
+    border: none;
+    margin-bottom: 92px;
+}
+
+.menu {
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-bottom: 30px;
+    float: left;
+}
+
+
+
+.name-of-product {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    background-color: #323232;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-left:10px;
+    
+}
+
+.price {
+    display: inline-block;
+    margin-left: -4px;
+    width: 55px;
+    height: 40px;
+    background-color: #8c8c8c;
+    color: white; 
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-left:15px;
+}
+
+.name-of-product:hover {
+    background: #1abc9c;
+    color: white;
+}
+
+.menu:hover .name-of-product {
+    background: #1abc9c;
+    color: white;
+}
+
+.menu:hover .price {
+    background: #85f1dc;
+    color: white;
+}
+
+/*latest news*/
+
+.menu2 {
+    width: 346px;
+    margin-left: 22px;
+    margin-right: 22px;
+    float: left;
+}
+
+.second-title {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 300px;
+    font-family:   'Ubuntu', sans-serif;
+    color: #717171;
+    text-align: center;
+    margin-bottom: 28px;
+    margin-top: 102px;
+}
+
+
+.first-line1 {
+    background-color: #1abc9c;
+    width: 162px;
+    height: 6px;
+    border: none;
+    margin-bottom: 92px;
+}
+
+h2 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: #555252;
+}
+
+
+.second-line {
+    background-color: #4ec6ab;
+    width: 136px;
+    height: 3px;
+    border: none;
+    margin-bottom: 28px;
+    margin-left: 0;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #555252;
+}
+
+
+button {
+    width: 160px;
+    height: 50px;
+    background: #4ec6ab;
+    border: none;
+    font-family:   'Ubuntu', sans-serif;
+    margin-top: 14px;
+    margin-bottom: 82px;
+    color: white;
+
+}
+    
+
+
+ 
+

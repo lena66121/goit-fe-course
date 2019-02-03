@@ -16,16 +16,17 @@ margin: 0 auto;
 
 /* site navigation */ 
 
+
 .site-navigation {
     margin: 0;
     padding: 0;
-}
+} 
 
 .site-navigation li {
-   display: inline-block; 
+   display: inline-block;
    font-family: 'Encode Sans Condensed', sans-serif;
    font-size: 14px;
-   font-weight: 500;
+   font-weight: 500; 
 }
 
 a {
@@ -38,8 +39,8 @@ a {
 .site-navigation li:not(last-child) {
     margin-left: 124px;
     margin-top: 77px;
-    margin-bottom: 105px;
-}
+    margin-bottom: 105px; 
+} 
 
 .site-navigation a:hover, 
 .site-navigation a:focus
@@ -58,6 +59,14 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.content {
+    margin-bottom: 140px;
+}
+
+.content:nth-child(2n) {
+    margin-bottom: 0;
 }
 
 .content {
