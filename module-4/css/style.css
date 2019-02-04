@@ -59,10 +59,11 @@ a {
     font-weight: 100;
 }
 
-.site-navigation ul {
-    font-family:  'Ubuntu', sans-serif;
+.site-navigation li {
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     margin-top: 0;
+    font-weight: 200;
 }
 
 .site-logo {
@@ -85,11 +86,12 @@ a {
 .first-title {
     margin: 0;
     font-size: 48px;
-    font-weight: 300px;
-    font-family:   'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-family:'Open Sans', sans-serif;
     color: #717171;
     text-align: center;
     margin-bottom: 28px;
+    text-transform: uppercase;
 }
 
 .first-line  {
@@ -100,7 +102,7 @@ a {
     margin-bottom: 92px;
 }
 
-.menu {
+.menu_items {
     margin-left: 18px;
     margin-right: 18px;
     margin-bottom: 30px;
@@ -114,6 +116,7 @@ a {
     width: 200px;
     height: 40px;
     background-color: #323232;
+    font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 16px;
     font-weight: 600;
@@ -130,6 +133,7 @@ a {
     height: 40px;
     background-color: #8c8c8c;
     color: white; 
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
@@ -142,19 +146,19 @@ a {
     color: white;
 }
 
-.menu:hover .name-of-product {
+.menu_items:hover .name-of-product {
     background: #1abc9c;
     color: white;
 }
 
-.menu:hover .price {
+.menu_items:hover .price {
     background: #85f1dc;
     color: white;
 }
 
 /*latest news*/
 
-.menu2 {
+.post_items {
     width: 346px;
     margin-left: 22px;
     margin-right: 22px;
@@ -164,12 +168,13 @@ a {
 .second-title {
     margin: 0;
     font-size: 48px;
-    font-weight: 300px;
-    font-family:   'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
     color: #717171;
     text-align: center;
     margin-bottom: 28px;
     margin-top: 102px;
+    text-transform: uppercase;
 }
 
 
@@ -185,6 +190,7 @@ h2 {
     margin-top: 12px;
     margin-bottom: 12px;
     color: #555252;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -201,6 +207,7 @@ p {
     font-size: 14px;
     margin-bottom: 0;
     color: #555252;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -209,10 +216,11 @@ button {
     height: 50px;
     background: #4ec6ab;
     border: none;
-    font-family:   'Ubuntu', sans-serif;
+    font-family:  'Roboto', sans-serif;
     margin-top: 14px;
     margin-bottom: 82px;
     color: white;
+    font-weight: normal;
 
 }
     
