@@ -100,7 +100,7 @@ html {
  }
 
  .second-titile::after {
-    content: url('/img/line.png');
+    content: url('img/line.png');
     display: block; 
     padding: 12px;
     padding-bottom: 62px;
