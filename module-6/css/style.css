@@ -48,7 +48,6 @@ html {
      position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    color: #95e1d3;
     font-size: 14px;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif; 
@@ -100,7 +99,7 @@ html {
  }
 
  .second-titile::after {
-    content: url('img/line.png');
+    content: url('/img/line.png');
     display: block; 
     padding: 12px;
     padding-bottom: 62px;
