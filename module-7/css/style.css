@@ -1,0 +1,281 @@
+html {
+    box-sizing: border-box; 
+ }
+ 
+ *,
+ *::before,
+ *::after {
+     box-sizing: inherit;
+ }
+
+ img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+ }
+
+ .container {
+    width: 940px;
+    margin: 0 auto;
+ }
+
+ /* page-header */
+
+ .page-nav {
+    display: flex;
+    height: 65px;
+    justify-content: space-between;
+    align-items: flex-end;
+ }
+
+ .site-navigation {
+   display: flex;
+   width: 485px;
+   justify-content: space-between;
+   align-items: flex-end;
+   padding: 0;
+   margin: 0;
+   list-style: none;
+  
+}
+
+.site-logo {
+   display: inline-block;
+}
+
+ .site-navigation a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+ }
+
+ .site-navigation a:hover {
+    color: #fed136;
+ }
+
+ /*header*/
+
+ .first-title {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 40px;
+   text-transform: uppercase;
+ }
+
+ .services-title {
+    margin-top: 116px;
+ }
+
+ .second-title {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 16px;
+   color: #777777;
+ }
+
+
+ .subtitle {
+   margin-top: 3px;
+ }
+
+ .services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+ }
+
+ .service-list {
+   display: flex;
+   flex-direction: column;
+    height: 232px;
+    width: 290px;
+    margin-bottom: 102px;
+ }
+
+ .icon {
+    align-self: center;
+    margin-top: 26px;
+ }
+
+ .service-name {
+   margin: 0;
+   padding: 0;
+   margin-top: 22px;
+   text-align: center;
+   font-size: 18px;
+   font-family: 'Montserrat';
+   font-weight: 700;
+ }
+
+ .description-of-service {
+   margin: 0;
+   padding: 0;
+   margin-top: 12px;
+   font-size: 14px;
+   font-family: 'Roboto Slab';
+   color: #777777;
+   line-height: 22px;
+   text-align: center;
+   padding: 0 20px;
+ }
+
+ /*contact*/
+
+ .contact-page {
+    max-width: 1400px;
+    height: 676px;
+    margin: 0 auto;
+    background-image: url('/img/Background1.png');
+ }
+
+ .dark-img, 
+ .world-map {
+    position: absolute;
+ }
+
+
+ .contacts {
+    margin: 0 auto;
+ }
+
+ .contact-title {
+    color: #ffffff;
+   padding-top: 102px;
+ }
+
+ .second-subtitle {
+   padding-top: 10px;
+ }
+
+/* forms */
+
+
+ .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 308px;
+    margin-top: 76px;
+ }
+
+ .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 214px;
+    width: 455px;
+ }
+
+ .form-name {
+    height: 50px;
+    width: 455px;
+    border-radius: 3px;
+    border: transparent;
+ }
+
+ .form-textarea {
+   border-radius: 3px;
+   border: transparent;
+   resize: none;
+ }
+
+ ::-webkit-input-placeholder {
+   font-size: 14px;
+   font-family: 'Montserrat';
+   font-weight: 700;
+   color: #bbbbbb;
+   padding-top: 10px;
+ }
+
+
+ :focus::-webkit-input-placeholder {
+    color: transparent;
+ }
+
+
+ .form-textarea {
+    width: 455px;
+    height: 214px;
+    padding-left: 20px;
+    padding-top: 8px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+ }
+
+ .send-button {
+    align-self: flex-end;
+    height: 66px;
+    width: 240px;
+    margin-left: 350px;
+    border: none;
+    background: #fed136;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 3px;
+ }
+
+ .required-form:invalid:placeholder-shown {
+   outline: none;
+  }
+
+  .required-form-textarea:invalid:placeholder-shown {
+   outline: none;
+  }
+
+ .required-form:invalid {
+    outline: 3px solid red;
+ }
+
+.required-form:valid {
+   outline: 3px solid green;
+   background: url('/img/icons8-ok.png');
+   background-color: #fff;
+   background-repeat: no-repeat;
+   background-size: 20px;
+   background-position: 426px 16px;
+}
+
+.required-form-textarea:valid {
+   outline: 3px solid green;
+}
+
+.required-form-textarea:invalid {
+   outline: 3px solid red;
+}
+
+
+input {
+   padding-left: 20px;
+   font-family: 'Montserrat';
+   font-weight: 400;
+}
+
+ 
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+ 
+
