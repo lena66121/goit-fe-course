@@ -134,7 +134,7 @@ html {
     max-width: 1400px;
     height: 676px;
     margin: 0 auto;
-    background-image: url('../img/Background1.png');
+    background-image: url('./img/Background1.png');
  }
 
  .dark-img, 
@@ -240,7 +240,7 @@ html {
 
 .required-form:valid {
    outline: 3px solid green;
-   background: url('../img/icons8-ok.png');
+   background: url('./img/icons8-ok.png');
    background-color: #fff;
    background-repeat: no-repeat;
    background-size: 20px;
