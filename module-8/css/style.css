@@ -1,0 +1,239 @@
+html {
+    box-sizing: border-box; 
+ }
+ 
+ *,
+ *::before,
+ *::after {
+     box-sizing: inherit;
+ }
+
+ img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+ }
+
+ .container {
+    max-width: 320px;
+ }
+
+ .page-header {
+    position: relative;
+    background-image: url('../img/background.png');
+    height: 540px;
+ }
+
+ .li-site-nav {
+    display: inline-block;
+    width: 90px;
+    height: 36px;
+    text-align: center;
+    padding-top: 6px;
+    margin-top: 20px;
+ }
+
+ .li-sign-up {
+   border: 2px solid #fff;
+   border-radius: 18px;
+   padding-top: 5px;
+ }
+
+ .site-navigation {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-left: 58px;
+    list-style: none;
+ }
+
+ .site-nav {
+    display: inline-block;
+   color: #fff;
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 14px;
+   text-decoration: none;
+ }
+
+ .site-logo { 
+   position: absolute;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 174px;
+    margin-left: 74px;
+ } 
+
+ .first-title {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 28px;
+   color: #fff;
+   text-transform: uppercase;
+ }
+
+ .second-title {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   font-size: 18px;
+   color: #fff;
+   margin-top: 78px;
+ }
+
+ .header-button {
+   position: absolute;
+   bottom: 0;
+    height: 40px;
+    width: 280px;
+    background-color: #ff4e50;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+ }
+
+ .link-button {
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+ }
+
+ .header-titles {
+    position: absolute;
+    width: 280px;
+    height: 175px;
+    margin-top: 225px;
+    margin-left: 20px;
+ }
+
+ /* main */
+ /* styles */
+
+ .third-title {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 22px;
+   color: #333333;
+ }
+
+ .name-of-person {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 14px;
+   color: #000;
+ }
+
+ .information-of-person {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   font-size: 14px;
+   color: #000;
+ }
+ 
+ .main-button {
+       height: 40px;
+       width: 280px;
+       background-color: #fff;
+       text-align: center;
+       border: none;
+       border-radius: 20px;
+       border: 2px solid #f14848;
+    }
+   
+    .link-main-button {
+       font-family: 'Montserrat';
+       font-weight: 700;
+       font-size: 14px;
+       text-decoration: none;
+       color: #f14848;
+    }
+
+    /* positioning */
+
+    .third-title {
+       margin-top: 68px;
+       margin-bottom: 18px;
+    }
+
+    .all-people-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .people-list {
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       width: inherit;
+       margin-bottom: 26px;
+    }
+
+    .photo-of-person {
+      align-self: center;
+    }
+
+    .icon {
+       position: absolute;
+       border-radius: 25px;
+       border: 4px solid #fff;
+       margin-top: 86px;
+       margin-left: 187px;
+    }
+
+    .name-of-person {
+       margin-top: 20px;
+    }
+
+    .information-of-person {
+      margin-top: 14px;
+      padding: 0 60px;
+      color: #747474;
+    }
+
+    .main-button {
+      margin-bottom: 58px;
+      margin-left: 18px;
+    }
+ 
+
+
+ 
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+ 
+
