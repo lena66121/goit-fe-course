@@ -1,0 +1,94 @@
+
+@media (min-width: 321px)  {
+
+  .container {
+    width: 100%;
+    max-width: 768px;
+ }
+
+  .page-header {
+     position: relative;
+     background-image: url('../img/background2.png');
+     height: 700px;
+  }
+
+
+  .site-navigation {
+    width: 23.43%;
+    margin-top: 42px;
+    right: 5.5%;
+  }
+
+  .li-site-nav {
+    width: 45%;
+  }
+
+  .site-logo { 
+    width: 24.21%;
+    margin-left: 5.98%;
+    margin-top: 48px;
+  } 
+
+  .first-title {
+    font-size: 49px;
+  }
+
+  .second-title {
+    margin-left: 8.94%;
+    font-size: 24px;
+  }
+
+  .header-titles {
+    width: 64.0625%;
+    height: 242px;
+    margin-top: 225px;
+    margin-left: 17.9%;
+  }
+
+  .header-button {
+   width: 45.9%;
+   margin-left: 26.8%;
+ }
+
+ /* main */
+
+ .third-title {
+  margin-bottom: 33px;
+}
+
+ .all-people-list {
+  width: 64.06%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.people-list {
+  width: 47.96%;
+  margin-bottom: 56px;
+}
+
+.information-of-person {
+  padding: 0 4%;
+}
+
+.main-button {
+  width: 25.13%;
+  margin-left: 37.23%;
+}
+
+.last-list {
+  order: 2;
+  margin-bottom: 38px;
+}
+
+.second-list {
+  order: 1;
+  margin-bottom: 38px;
+}
+
+
+    
+     
+}
