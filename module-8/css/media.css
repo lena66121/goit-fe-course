@@ -1,9 +1,8 @@
 
-@media (min-width: 320px) {
+@media (min-width: 321px) {
 
   .container {
-    width: 100%;
-    max-width: 768px;
+    width: 768px;
  }
 
   .page-header {
@@ -95,10 +94,9 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .container {
-    width: 100%;
-    max-width: 1440px;
+    width: 1440px;
  }
 
   .page-header {

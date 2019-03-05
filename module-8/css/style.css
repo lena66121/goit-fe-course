@@ -15,9 +15,8 @@ html {
  }
 
  .container {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
+    
+    width: 320px;
  }
 
  .page-header {
