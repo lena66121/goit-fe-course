@@ -1,84 +1,55 @@
-/*
-@media (min-width: 321px) {
-
-  .container {
-    width: 768px;
- }
+@media (min-width: 768px) {
 
   .page-header {
-     position: relative;
-     background-image: url('../img/background2.png');
-     height: 700px;
-  }
-
-
-  .site-navigation {
-    margin-top: 42px;
-    right: 0;
-    margin-right: 46px;
-  }
-
-  .site-logo {
-    margin-left: 46px;
-    margin-top: 48px;
-  } 
-
-  .first-title {
-    font-size: 49px;
-    margin-bottom: 30px;
-  }
-
-  .second-title {
-    margin-left: 4px;
-    font-size: 24px;
-    margin-bottom: 34px;
-  }
-
-  .header-titles {
-    width: 492px;
-    margin-top: 225px;
-    margin-left: 138px;
-  }
-
-  .header-button {
-   width: 226px;
-   margin-left: 132px;
+    background-image: url('../img/background3.png');
+    height: 700px;
  }
 
- .header-button {
- 
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
  }
 
- /* main */
-/*
- .third-title {
-  margin-bottom: 33px;
+ .authorization {
+   width: 100%;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+ }
+
+ .site-navigation {
+   margin-right: 50px;
+  
+ }
+
+ .site-logo {
+   margin-top: 35px;
+   margin-left: 46px;
+ }
+
+ .first-title {
+  width: 64.06%;
+  margin-bottom: 18px;
+  font-size: 52px;
 }
 
- .partner-list {
-  width: 492px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+.header-button {
+  width: 29.42%;
 }
 
-.partner {
-  width: 236px;
-  margin-bottom: 56px;
+.second-title {
+  width: 52.6%;
+ font-size: 24px;
 }
 
-.icon {
-  margin-left: 145px;
-}
-
-.information-of-person {
-  padding: 0 10px;
+.partner-list {
+  flex-flow: row wrap;
+  max-width: 640px;
 }
 
 .main-button {
-  width: 193px;
-  margin-left: 286px;
+  width: 192px;
+  margin-top: 26px;
 }
 
 .last-list {
@@ -88,53 +59,32 @@
 
 .second-list {
   order: 1;
-  margin-bottom: 38px;
+ margin: 0;
 }  
-     
+  
 }
 
-
-@media (min-width: 769px) {
-  .container {
-    width: 1440px;
+@media (min-width: 1200px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
  }
 
-  .page-header {
-     background-image: url('../img/background3.png');
-  }
-
-  .site-navigation { 
-    margin-right: 250px;
-  }
-
-  .site-logo {
-    margin-left: 248px;
-  } 
-
-  .partner-list {
-    width: 940px;
-  }
-
-  .partner {
-    width: 220px;
-  }
-
-  .information-of-person {
-    padding: 0 2px;
-  }
-
-  .main-button {
-    width: 193px;
-    margin-left: 624px;
-  }
-
-  .header-titles {
-    width: 500px;
-    margin-left: 470px;
-  }
-
-  .icon {
-    margin-left: 134px;
-  }
+ .authorization {
+  width: 65.27%;
 }
-*/
+
+ .partner-list {
+   flex-wrap: nowrap;
+   max-width: 942px;
+}
+
+.information-of-person {
+  width: 91%;
+}
+
+.main-button {
+  margin-top: 38px;
+}
+
+}
