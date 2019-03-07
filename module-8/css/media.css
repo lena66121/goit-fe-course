@@ -1,4 +1,4 @@
-
+/*
 @media (min-width: 321px) {
 
   .container {
@@ -50,12 +50,12 @@
  }
 
  /* main */
-
+/*
  .third-title {
   margin-bottom: 33px;
 }
 
- .all-people-list {
+ .partner-list {
   width: 492px;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -63,7 +63,7 @@
   justify-content: space-between;
 }
 
-.people-list {
+.partner {
   width: 236px;
   margin-bottom: 56px;
 }
@@ -111,11 +111,11 @@
     margin-left: 248px;
   } 
 
-  .all-people-list {
+  .partner-list {
     width: 940px;
   }
 
-  .people-list {
+  .partner {
     width: 220px;
   }
 
@@ -137,3 +137,4 @@
     margin-left: 134px;
   }
 }
+*/

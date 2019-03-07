@@ -8,51 +8,42 @@ html {
      box-sizing: inherit;
  }
 
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
  img {
      display: block;
      max-width: 100%;
      height: auto;
  }
 
- .container {
-    
-    width: 320px;
+ body {
+    min-width: 320px;
+    max-width: 768px;
+    margin: 0 auto;
  }
 
  .page-header {
-    position: relative;
-    background-image: url('../img/background.png');
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background: url('../img/background2.png') center center no-repeat;
+    background-size: auto 100%;
     height: 540px;
  }
 
- .li-site-nav {
-    display: inline-block;
-    width: 88px;
-    height: 36px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    padding-top: 6px;
- }
-
- 
-.li-site-nav:hover {
-   border: 2px solid #fff;
-   border-radius: 18px;
- }
 
  .site-navigation {
-    position: absolute;
-    width: 180px;
-    margin: 0;
-    padding: 0;
-    margin-top: 24px;
-    margin-left: 62px;
+    display: flex;
+    flex-direction: row;
     list-style: none;
+    margin-top: 25px;
+    margin-bottom: 116px;
  }
 
  .site-nav {
-   display: inline-block;
    color: #fff;
    font-family: 'Montserrat';
    font-weight: 700;
@@ -60,21 +51,27 @@ html {
    text-decoration: none;
  }
 
+ .li-site-nav {
+   padding: 8px 18px;
+  
+ }
+
+ .li-site-nav:hover {
+   border: 2px solid #fff;
+   border-radius: 18px;
+ }
+
  .site-logo { 
-   position: absolute;
-   display: inline-block;
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 20px;
     color: #fff;
     text-decoration: none;
-    margin-top: 174px;
-    margin-left: 68px;
+    margin-bottom: 35px;
  } 
 
  .first-title {
-   margin: 0;
-   padding: 0;
+   width: 86.87%;
    margin-bottom: 18px;
    text-align: center;
    font-family: 'Montserrat';
@@ -85,20 +82,19 @@ html {
  }
 
  .second-title {
-   margin: 0;
-   padding: 0;
+    width: 69.37%;
    margin-bottom: 18px;
    text-align: center;
    font-family: 'Roboto', sans-serif;
    font-weight: 300;
    font-size: 18px;
    color: #fff;
-   
+
  }
 
  .header-button {
     height: 40px;
-    width: 280px;
+    width: 86.87%;
     background-color: #ff4e50;
     border: none;
     border-radius: 20px;
@@ -113,18 +109,15 @@ html {
  }
 
  .header-titles {
-   position: absolute;
-   width: 280px;
-   margin-top: 225px;
-   margin-left: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
  /* main */
  /* styles */
 
  .third-title {
-   margin: 0;
-   padding: 0;
    text-align: center;
    font-family: 'Montserrat';
    font-weight: 700;
@@ -154,7 +147,7 @@ html {
  
  .main-button {
        height: 40px;
-       width: 280px;
+       width: 87.5%;
        background-color: #fff;
        text-align: center;
        border: none;
@@ -172,49 +165,66 @@ html {
 
     /* positioning */
 
+    .main {
+       display: flex;
+       flex-flow: column wrap;
+       justify-content: center;
+       align-items: center;
+    }
+
     .third-title {
        margin-top: 68px;
        margin-bottom: 18px;
     }
 
-    .all-people-list {
+    .partner-list {
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
 
-    .people-list {
-       position: relative;
+    .partner {
        display: flex;
        flex-direction: column;
-       width: 320px;
+       align-items: center;
+       max-width: 320px;
        margin-bottom: 26px;
     }
 
+    .photo-wrapper {
+       position: relative;
+    }
+
+   
+
     .photo-of-person {
       align-self: center;
+      position: relative;
+      
     }
 
     .icon {
        position: absolute;
        border-radius: 25px;
        border: 4px solid #fff;
-       margin-top: 86px;
-       margin-left: 188px;
+       top: 70%;
+       left: 72%;
     }
+
+    
 
     .name-of-person {
        margin-top: 20px;
     }
 
     .information-of-person {
+      width: 68%;
       margin-top: 14px;
-      padding: 0 52px;
       color: #747474;
     }
 
     .main-button {
       margin-bottom: 58px;
-      margin-left: 18px;
     }
  
 
