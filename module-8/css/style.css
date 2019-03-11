@@ -70,6 +70,7 @@ html {
  } 
 
  .first-title {
+   margin: 0;
    width: 86.87%;
    margin-bottom: 18px;
    text-align: center;
@@ -81,7 +82,7 @@ html {
  }
 
  .second-title {
-    width: 69.37%;
+   width: 69.37%;
    margin-bottom: 18px;
    text-align: center;
    font-family: 'Roboto', sans-serif;
@@ -111,6 +112,7 @@ html {
    display: flex;
    flex-direction: column;
    align-items: center;
+   padding-top: 34px;
 }
 
  /* main */
@@ -194,8 +196,6 @@ html {
        position: relative;
     }
 
-   
-
     .photo-of-person {
       align-self: center;
       position: relative;
@@ -209,8 +209,6 @@ html {
        top: 70%;
        left: 72%;
     }
-
-    
 
     .name-of-person {
        margin-top: 20px;
