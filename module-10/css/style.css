@@ -1,0 +1,400 @@
+html {
+    box-sizing: border-box; 
+ }
+ 
+ *,
+ *::before,
+ *::after {
+     box-sizing: inherit;
+ }
+
+ img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+ }
+
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ /* GENERAL CLASSES */
+
+ .link {
+    text-decoration: none;
+ }
+ /* page-header */
+
+ .container {
+     width: 1200px;
+     margin: 0 auto;
+ }
+
+
+ .page-header {
+     width: 100%;
+     height: 1000px;
+     background: url('../img/Layer 15-min.png') no-repeat center;
+     background-size: auto;
+     margin: 0 auto;
+     margin-bottom: 46px;
+ }
+
+
+
+
+.site-logo__link { 
+   color: #ffffff;
+   font-family: 'Montserrat';
+   font-size: 30px;
+   font-weight: 700;
+}
+
+.site-nav__list {
+   display: flex;
+   list-style: none;
+   text-decoration: none;
+}
+
+.site-nav__link {
+   position: relative;
+   display: inline-block;
+   margin: 0 20px;
+   color: #ffffff;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+
+
+.site-nav__link::after {
+   display: block;
+   position: absolute;
+   content: '';
+   width: 0%;
+   height: 3px;
+   left: 50%;
+   margin-top: 12px;
+   background-color: #fce38a;
+   transition:  0.2s ease-in-out;
+   transform: translateX(-50%);
+}
+.site-nav__link:hover::after{
+   width: 100%;
+}
+
+.site-nav__link:hover svg path {
+   fill:#fce38a;
+}
+
+.site-nav__link:hover {
+   color: #fce38a;
+}
+
+.page-nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 28px;
+   margin-bottom: 170px;
+}
+
+.wrap-title {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+.wrap-title__slogan {
+margin-bottom: 40px;
+color: #ffffff;
+font-family: "Kaushan Script";
+font-size: 72px;
+font-weight: 400;
+}
+
+.wrap-title__headline {
+   position: relative;
+   margin: 0;
+   margin-bottom: 124px;
+   text-align: center;
+   color: #ffffff;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 150px;
+   font-weight: 700;
+   line-height: 140px;
+   text-transform: uppercase;
+}
+
+
+.wrap-title__link {
+   width: 160px;
+   height: 40px;
+   border: 3px solid #ffffff;
+   background-color: transparent;
+   color: #ffffff;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+   padding: 8px 26px;
+}
+
+.section__title--small {
+   margin-bottom: 26px;
+   text-align: center;
+   color: #333333;
+   font-family: "Kaushan Script";
+   font-size: 24px;
+   font-weight: 400;
+}
+
+.section__title--big {
+   position: relative;
+   text-align: center;
+   margin-bottom: 108px;
+   color: #333333;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 30px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.section__title--big::after {
+   display: block;
+   position: absolute;
+   content: '';
+   width: 5%;
+   height: 3px;
+   left: 50%;
+   margin-top: 38px;
+   background-color: #f38181;
+   transform: translateX(-50%);
+}
+
+.services {
+   display: flex;
+   justify-content: space-between;
+   flex-flow: wrap;
+}
+
+.services__item {
+   position: relative;
+   width: 380px;
+   height: 86px;
+   margin-bottom: 100px;
+}
+
+.services__item svg {
+   position: absolute;
+   margin-left: 20px;
+}
+
+.service__item--title {
+   position: absolute;
+   margin-left: 80px;
+   top: 0;
+   color: #333333;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+.service__item--text{
+   position: absolute;
+   top: 25px;
+   margin-left: 80px;
+   color: #999999;
+   font-family: 'Roboto';
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.section__title--text {
+   text-align: center;
+   color: #999999;
+   font-family: 'Roboto';
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.team {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 74px;
+}
+
+.team__member--name {
+   margin-bottom: 14px;
+   text-align: center;
+   color: #333333;
+   font-family: 'Montserrat';
+   font-size: 14px;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+.team__member--occupation {
+   text-align: center;
+   color: #999999;
+   font-family: "Roboto";
+   font-style: italic;
+   font-size: 15px;
+   font-weight: 300;
+   line-height: 24px;
+}
+
+.section {
+   margin-bottom: 95px;
+}
+
+
+
+/* footer */
+
+.foo {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 64px;
+   border-top: 2px solid #e5e5e5;
+}
+
+.foo__text {
+   color: #333333;
+   font-family: 'Montserrat';
+   font-size: 14px;
+   font-weight: 500;
+}
+
+.foo__link:hover {
+   color: #f38181;
+}
+
+
+.foo-forms {
+   display: flex;
+}
+
+.foo__btn {
+   width: 150px;
+   height: 40px;
+   border: none;
+   background-color: #95e1d3;
+   color: #ffffff;
+   font-family: 'Montserrat';
+   font-size: 14px;
+   font-weight: 700;
+   text-transform: uppercase;
+   outline: none;
+}
+
+.foo__input {
+   width: 230px;
+   height: 40px;
+   padding-left: 10px;
+   border: 2px solid #e7e7e7;
+   border-right: none;
+   background-color: #ffffff;
+   outline: none;
+}
+
+::-webkit-input-placeholder {
+   padding-left: 10px;
+   color: #cccccc;
+   font-family: 'Roboto';
+   font-style: italic;
+   font-size: 15px;
+   font-weight: 400;
+}
+
+:focus::-webkit-input-placeholder {
+   color: transparent;
+}
+
+ .wrapper {
+    position: relative;
+    width: 380px;
+   height: 470px;
+   margin-bottom: 46px;
+ }
+
+
+.team__member--photo{
+   position: absolute;
+}
+
+
+.overlay-socials  {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   width: 380px;
+   height: 470px;
+}
+
+.wrapper:hover {
+   transition: 0.5s;
+   box-shadow: 10px 10px #95e1d3;
+   transform: translateX(-10px)
+  translateY(-10px);
+}
+
+.wrapper:hover .overlay-socials {
+   background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+}
+
+ .wrapper:hover .overlay-socials__btn {
+   transition: 0.7s;
+   opacity: 1;
+} 
+ 
+ .overlay-socials__btn--hover:hover svg use {
+   fill: #fff;
+} 
+
+.overlay-socials__btn--hover:hover {
+   transition: 0.7s;
+   background-color:#f38181; 
+}
+
+.overlay-socials__btn {
+   outline: none;
+   margin-right: 1.5px;
+   border: none;
+   border-radius: 3px;
+   width: 56px;
+   height: 56px;
+   background-color: #fce38a;
+   opacity: 0;
+}
+
+
+
+ 
+
+
+ 
+
+      
+ 
+ 
+
+
+
+
+
+
+
+
+
+ 
+
