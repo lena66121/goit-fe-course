@@ -1,0 +1,24 @@
+.wrapper {
+    position: relative;
+    width: 380px;
+   height: 470px;
+   margin-bottom: 46px;
+
+   &:hover {
+      transition: 0.5s;
+      box-shadow: 10px 10px #95e1d3;
+      transform: translateX(-10px)
+     translateY(-10px);
+   }
+   
+   &:hover .overlay-socials {
+      background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+   }
+   
+    &:hover .overlay-socials__btn {
+      transition: 0.7s;
+      opacity: 1;
+   } 
+ }
+
+ 

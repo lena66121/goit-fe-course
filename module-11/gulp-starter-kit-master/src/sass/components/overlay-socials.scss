@@ -1,0 +1,31 @@
+.overlay-socials  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 380px;
+    height: 470px;
+
+    &__btn--hover:hover svg use {
+      fill: $main-color;
+   } 
+   
+   &__btn--hover:hover {
+      transition: 0.7s;
+      background-color: $first-accent-color; 
+   }
+ }
+ 
+
+ .overlay-socials__btn {
+    outline: none;
+    margin-right: 1.5px;
+    border: none;
+    border-radius: 3px;
+    width: 56px;
+    height: 56px;
+    background-color: $second-accent-color;
+    opacity: 0;
+ }
+
+ 

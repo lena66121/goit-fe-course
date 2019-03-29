@@ -1,0 +1,39 @@
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+ }
+ 
+ .services__item {
+    position: relative;
+    width: 380px;
+    height: 86px;
+    margin-bottom: 100px;
+ }
+ 
+ .services__item svg {
+    position: absolute;
+    margin-left: 20px;
+ }
+ 
+ .service__item--title {
+    position: absolute;
+    margin-left: 80px;
+    top: 0;
+    color: $title-color;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+ }
+ 
+ .service__item--text{
+    position: absolute;
+    top: 25px;
+    margin-left: 80px;
+    color: $text-color;
+    font-family: $text-font;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+ }

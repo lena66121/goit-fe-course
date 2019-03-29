@@ -1,0 +1,45 @@
+.section__title--small {
+    margin-bottom: 26px;
+    text-align: center;
+    color: $title-color;
+    font-family: $main-accent-font;
+    font-size: 24px;
+    font-weight: 400;
+ }
+ 
+ .section__title--big {
+    position: relative;
+    text-align: center;
+    margin-bottom: 108px;
+    color: $title-color;
+    font-family: $main-font;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 5%;
+        height: 3px;
+        left: 50%;
+        margin-top: 38px;
+        background-color: $first-accent-color;
+        transform: translateX(-50%);
+     }
+    
+ }
+
+ .section__title--text {
+    text-align: center;
+    color: $text-color;
+    font-family: $text-font;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+ }
+
+ .section {
+   margin-bottom: 95px;
+}

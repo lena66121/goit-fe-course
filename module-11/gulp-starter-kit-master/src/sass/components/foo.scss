@@ -1,0 +1,47 @@
+.foo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    border-top: 2px solid #e5e5e5;
+ }
+ 
+ .foo__text {
+    @extend %link;
+    color: $title-color;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 500;
+ }
+ 
+ .foo__link:hover {
+    color: $first-accent-color;
+ }
+ 
+ 
+ .foo-forms {
+    display: flex;
+ }
+ 
+ .foo__btn {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #95e1d3;
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+ }
+ 
+ .foo__input {
+    width: 230px;
+    height: 40px;
+    padding-left: 10px;
+    border: 2px solid #e7e7e7;
+    border-right: none;
+    background-color: #ffffff;
+    outline: none;
+ }

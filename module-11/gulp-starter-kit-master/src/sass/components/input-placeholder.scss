@@ -1,0 +1,12 @@
+::-webkit-input-placeholder {
+    padding-left: 10px;
+    color: #cccccc;
+    font-family: $text-font;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+ }
+ 
+ :focus::-webkit-input-placeholder {
+    color: transparent;
+ }

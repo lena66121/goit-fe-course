@@ -1,0 +1,29 @@
+.team {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 74px;
+ }
+ 
+ .team__member--name {
+    margin-bottom: 14px;
+    text-align: center;
+    color: $title-color;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+ }
+ 
+ .team__member--occupation {
+    text-align: center;
+    color: $text-color;
+    font-family: $text-font;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+ }
+
+ .team__member--photo{
+   position: absolute;
+}

@@ -1,0 +1,45 @@
+.site-nav__list {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+ }
+ 
+ .site-nav__link {
+    @extend %link;
+    position: relative;
+    display: inline-block;
+    margin-top: 28px;
+    margin: 0 20px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: '';
+      width: 0%;
+      height: 3px;
+      left: 50%;
+      margin-top: 12px;
+      background-color: #fce38a;
+      transition:  0.2s ease-in-out;
+      transform: translateX(-50%);
+   }
+   &:hover::after{
+      width: 100%;
+   }
+   
+   &:hover svg path {
+      fill:#fce38a;
+   }
+   
+   &:hover {
+      color: #fce38a;
+   }
+ }
+ 
+ 
+ 
