@@ -1,63 +1,52 @@
 // TASK 3
 
 
-/*  let country = prompt('Укажите страну доставки');
-  let costOfDeliveryToChina = 100;
-  let costOfDeliveryToSouthAmerica = 250;
-  let costOfDeliveryToAustralia = 170;
-  let costOfDeliveryToIndia = 80;
-  let costOfDeliveryToJamaica = 120;
-  let value;
+  let country = prompt('Укажите страну доставки');
+  const costOfDeliveryToChina = 100;
+  const costOfDeliveryToSouthAmerica = 250;
+  const costOfDeliveryToAustralia = 170;
+  const costOfDeliveryToIndia = 80;
+  const costOfDeliveryToJamaica = 120;
 
-
-  if (country === null) {       //check on cancellation
-    alert('До новых встреч!');
-  } 
-
-  country = country.toLowerCase();
-
-  if (country !== null) {
-  switch(country) {
+  switch(country.toLowerCase()) {
       case 'китай': 
-      value = `Доставка в ${country} будет стоить ${costOfDeliveryToChina} кредитов`;
+      console.log(`Доставка в ${country} будет стоить ${costOfDeliveryToChina} кредитов`);;
        break;
       case 'южная америка':
-      value = `Доставка в ${country} будет стоить ${costOfDeliveryToSouthAmerica} кредитов`;
+      console.log(`Доставка в ${country} будет стоить ${costOfDeliveryToSouthAmerica} кредитов`);
        break;
       case 'австралия': 
-      value = `Доставка в ${country} будет стоить ${costOfDeliveryToAustralia} кредитов`;
+      console.log(`Доставка в ${country} будет стоить ${costOfDeliveryToAustralia} кредитов`);
        break;
       case 'индия': 
-      value = `Доставка в ${country} будет стоить ${costOfDeliveryToIndia} кредитов`;
+      console.log(`Доставка в ${country} будет стоить ${costOfDeliveryToIndia} кредитов`);
        break;
       case 'ямайка': 
-      value = `Доставка в ${country} будет стоить ${costOfDeliveryToJamaica} кредитов`;
+      console.log(`Доставка в ${country} будет стоить ${costOfDeliveryToJamaica} кредитов`);
        break;
       default:
       console.log('В вашей стране доставка не доступна.');
   }
-  alert(value);
-  } */
+  
 
 
 // TASK 2 
 
- /* let credits = 23580;
-  const pricePerDroid = 3000;
-  let quantityOfDroid = prompt('Введите количество дроидов');
-  let totalPrice = quantityOfDroid * pricePerDroid;
-  let balance = credits - totalPrice;
+  // let credits = 23580;
+  // const pricePerDroid = 3000;
+  // let quantityOfDroid = prompt('Введите количество дроидов');
+  // let totalPrice = quantityOfDroid * pricePerDroid;
   
-  if (quantityOfDroid === null) {
-      console.log('Отменено пользователем!');
-  } else if (totalPrice > credits) {
-    console.log('Недостаточно средств на счету!');
-  } else {
-      alert(`Вы купили ${quantityOfDroid} дроидов, на счету осталось ${balance} кридитов.`);
-  } */
+  // if (quantityOfDroid === null) {
+  //     console.log('Отменено пользователем!');
+  // } else if (totalPrice > credits) {
+  //   console.log('Недостаточно средств на счету!');
+  // } else {
+  //     alert(`Вы купили ${quantityOfDroid} дроидов, на счету осталось ${credits - totalPrice} кридитов.`);
+  // } 
 
   // TASK 1
-
+/*
   let message;
   let question = prompt('Введите пароль');
   const ADMIN_PASSWORD = 'm4ng0h4ckz';
@@ -69,7 +58,7 @@
   } else {
       message = 'Доступ запрещен, неверный пароль!';
   } 
-    alert(message);
+    alert(message);*/
   
 
 
