@@ -8,6 +8,9 @@
   const costOfDeliveryToIndia = 80;
   const costOfDeliveryToJamaica = 120;
 
+  if (country === null) {
+    alert('До новых встреч!')
+  } else {
   switch(country.toLowerCase()) {
       case 'китай': 
       console.log(`Доставка в ${country} будет стоить ${costOfDeliveryToChina} кредитов`);;
@@ -27,26 +30,27 @@
       default:
       console.log('В вашей стране доставка не доступна.');
   }
+}
   
 
 
 // TASK 2 
 
-  // let credits = 23580;
-  // const pricePerDroid = 3000;
-  // let quantityOfDroid = prompt('Введите количество дроидов');
-  // let totalPrice = quantityOfDroid * pricePerDroid;
+  let credits = 23580;
+  const pricePerDroid = 3000;
+  let quantityOfDroid = prompt('Введите количество дроидов');
+  let totalPrice = quantityOfDroid * pricePerDroid;
   
-  // if (quantityOfDroid === null) {
-  //     console.log('Отменено пользователем!');
-  // } else if (totalPrice > credits) {
-  //   console.log('Недостаточно средств на счету!');
-  // } else {
-  //     alert(`Вы купили ${quantityOfDroid} дроидов, на счету осталось ${credits - totalPrice} кридитов.`);
-  // } 
+  if (quantityOfDroid === null) {
+      console.log('Отменено пользователем!');
+  } else if (totalPrice > credits) {
+    console.log('Недостаточно средств на счету!');
+  } else {
+      alert(`Вы купили ${quantityOfDroid} дроидов, на счету осталось ${credits - totalPrice} кридитов.`);
+  } 
 
   // TASK 1
-/*
+
   let message;
   let question = prompt('Введите пароль');
   const ADMIN_PASSWORD = 'm4ng0h4ckz';
@@ -58,7 +62,7 @@
   } else {
       message = 'Доступ запрещен, неверный пароль!';
   } 
-    alert(message);*/
+    alert(message);
   
 
 
