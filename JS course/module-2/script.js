@@ -33,26 +33,26 @@ console.log(`Общая сумма чисел равна ${total}`);
 
 // Task 2 
 
-// const passwords = ['qwerty', '111qwe', '123123', 'r4nd0mp4zzw0rd'];
-// let attemptsLeft = 3;
-// let message;
+const passwords = ['qwerty', '111qwe', '123123', 'r4nd0mp4zzw0rd'];
+let attemptsLeft = 3;
+let message;
 
-//   do {
-//   attemptsLeft -= 1;
-//   const userPassword = prompt('Введите пароль');
+  do {
+  attemptsLeft -= 1;
+  const userPassword = prompt('Введите пароль');
 
-//   if (userPassword === null) break;
+  if (userPassword === null) break;
   
-//   if (!attemptsLeft) {
-//     alert('У вас закончились попытки, аккаунт заблокирован!');
-//     break;
-//   }
+  if (!attemptsLeft) {
+    alert('У вас закончились попытки, аккаунт заблокирован!');
+    break;
+  }
 
-//   message = (passwords.includes(userPassword)) ? 'Добро пожаловать!' :
-//   `Неверный пароль, у вас осталось ${attemptsLeft} попыток`;
-//   alert(message);
+  message = (passwords.includes(userPassword)) ? 'Добро пожаловать!' :
+  `Неверный пароль, у вас осталось ${attemptsLeft} попыток`;
+  alert(message);
     
-// } while (attemptsLeft || passwords.includes(userPassword) === false)
+} while (attemptsLeft || passwords.includes(userPassword) === false)
 
 
 
