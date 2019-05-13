@@ -7,21 +7,21 @@ const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 
 // The function to valid the length of the login 
 const isLoginValid = login => {
-  if (login.length < 4 || login.length > 16) return false;
-  return true;
+  return (login.length >= 4 && login.length <= 16);
 };
+
 
 
 // The function to valid the unique of the login 
 const isLoginUnique = (allLogins, login) => {
-  if (allLogins.includes(login)) return false;
-  return true;
+  return (allLogins.includes(login));
 };
+
 
 //The function that pushes verified logins to array
 const addLogin = (allLogins, login) => {
-  if (isLoginValid(login) === false) return 'Ошибка! Логин должен быть от 4 до 16 символов';
-  if (isLoginUnique(allLogins, login) === false) return 'Такой логин уже используется!';
+  if (!isLoginValid(login)) return 'Ошибка! Логин должен быть от 4 до 16 символов';
+  if (isLoginUnique(allLogins, login)) return 'Такой логин уже используется!';
   logins.push(login);
   
   return 'Логин успешно добавлен!';
