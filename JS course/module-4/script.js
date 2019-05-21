@@ -18,56 +18,48 @@ const notepad = {
   },
 
   findNoteById(id) {
-    for (const obj of notepad.notes) {
-      if (Object.values(obj).includes(id)) return obj;
+    for (const note of this.notes) {
+      if (note.id === id) return note;
     }
   },
 
   saveNote(note) {
-    notepad.notes.push(note)
+    this.notes.push(note)
     return note;
   },
 
   deleteNote(id) {
-    for (const obj of notepad.notes) {
-      if (Object.values(obj).includes(id)) notepad.notes.splice(notepad.notes.indexOf(obj), 1);
-    }
+     const note = this.findNoteById(id);
+     this.notes.splice(this.notes.indexOf(note), 1);
   },
 
   updateNoteContent(id, updatedContent) {
-    for (const obj of notepad.notes) {
-      if (obj.id === id) return Object.assign(obj, updatedContent);
-    }
+    const note = this.findNoteById(id);
+    return Object.assign(note, updatedContent);
   },
 
   updateNotePriority(id, priority) {
-   
-    for (const obj of this.notes) { 
-     if (obj.id === id) obj.priority = priority;
-     //return obj;
-    }
+    const note = this.findNoteById(id);
+    note.priority = priority;
+    return note;
   },
 
   filterNotesByQuery(query) {
     
     query = query.toLowerCase();
     const notesFilteredByQuery = [];
-    
-     for (const obj of notepad.notes) {
-       if (obj.title.toLowerCase().includes(query) || obj.body.toLowerCase().includes(query)) 
-       notesFilteredByQuery.push(obj)
+     for (const note of this.notes) {
+       if (note.title.toLowerCase().includes(query) || note.body.toLowerCase().includes(query)) 
+       notesFilteredByQuery.push(note)
       }
-
       return notesFilteredByQuery;
   },
 
   filterNotesByPriority(priority) {
-
      const notesfilteredByPriority = [];
-
-     for (const obj of notepad.notes) {
-       if (obj.priority === priority) 
-       notesfilteredByPriority.push(obj)
+     for (const note of this.notes) {
+       if (note.priority === priority) 
+       notesfilteredByPriority.push(note)
      }
      return notesfilteredByPriority;
   }   
@@ -109,17 +101,30 @@ notepad.saveNote({
   body:
     "Winter is coming! Need some really warm clothes: shoes, sweater, hat, jacket, scarf etc. Maybe should get a set of sportwear as well so I'll be able to do some excercises in the park.",
   priority: Priority.LOW,
-});    
+});   
+
+
 
 console.log('Все текущие заметки: ', notepad.getNotes());
-
 
 /*
  * Зима уже близко, пора поднять приоритет на покупку одежды
  */ 
 
+notepad.updateNotePriority('id-4', Priority.NORMAL)
+
 console.log(
   'Заметки после обновления приоритета для id-4: ',
+  notepad.getNotes(),
+);
+
+/*
+ * Решил что фреймворки отложу немного, понижаю приоритет
+ */
+notepad.updateNotePriority('id-3', Priority.LOW);
+
+console.log(
+  'Заметки после обновления приоритета для id-3: ',
   notepad.getNotes(),
 );
 
