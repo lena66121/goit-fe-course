@@ -1,5 +1,13 @@
 import {ICON_TYPES, NOTE_ACTIONS} from './utils/constants';
-import {noteList, noteTitle, noteBody} from './html-el-const';
+
+export const refs = {
+  noteList: document.querySelector('.note-list'),
+  formNoteEditor: document.querySelector('.note-editor'),
+  submitButton: document.querySelector('.button'),
+  searchInput: document.querySelector('.search-form__input'),
+  noteTitle: document.querySelector('input[name="note_title"]'),
+  noteBody: document.querySelector('textarea[name="note_body"]'),
+}
 
 // Create general action button
  export const createActionButton = () => {
@@ -91,7 +99,7 @@ import {noteList, noteTitle, noteBody} from './html-el-const';
     const noteListItem = document.createElement('li');
     noteListItem.classList.add('note-list__item');
     noteListItem.dataset.id = note.id;
-    noteList.append(noteListItem);
+    refs.noteList.append(noteListItem);
   
     const noteDiv = document.createElement('div');
     noteDiv.classList.add("note");

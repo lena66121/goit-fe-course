@@ -1,27 +1,23 @@
 import Notepad from './notepad-model';
 import initialNotes from '../assets/notes.json';
-import {createListItem, renderNoteList} from './view';
-import {noteList, formNoteEditor, searchInput, noteTitle, noteBody } from './html-el-const'
-
-  const notePad = new Notepad(initialNotes);
-  
-  renderNoteList(noteList, notePad.notes);
-  
+import {createListItem, renderNoteList, refs} from './view';
+ 
+export const notePad = new Notepad(initialNotes); 
   
   //---- handlers functions ----
   
   // function adds note to list of notes
-  const addListItem = (listRef, note) => {
+export  const addListItem = (listRef, note) => {
     const createdNote = createListItem(note);
     listRef.append(createdNote);
   }
   
   // function creates new note
-  const createNote = event => {
+export  const createNote = event => {
     event.preventDefault();
   
-    const titleValue = noteTitle.value;
-    const bodyValue = noteBody.value;
+    const titleValue = refs.noteTitle.value;
+    const bodyValue = refs.noteBody.value;
     const message = 'Необходимо заполнить все поля!';
   
     if(bodyValue.trim() === '' || titleValue.trim() === '') {
@@ -31,14 +27,12 @@ import {noteList, formNoteEditor, searchInput, noteTitle, noteBody } from './htm
   
     const newNote = notePad.createNewNote(titleValue, bodyValue)
     notePad.saveNote(newNote);
-    formNoteEditor.reset();
-    addListItem(noteList, newNote)
+    refs.formNoteEditor.reset();
+    addListItem(refs.noteList, newNote)
   }
   
-  
-  
   // function removes the note from list of notes
-  const removeListItem = (event) => {
+export  const removeListItem = (event) => {
     if (event.target.closest('button').dataset.action === 'delete-note') {
     const id = event.target.closest('li[data-id]')
     notePad.deleteNote(id);
@@ -47,15 +41,13 @@ import {noteList, formNoteEditor, searchInput, noteTitle, noteBody } from './htm
   }  
   
   // function filters notes by input value
-  const filterNotes = event => {
+export  const filterNotes = event => {
     const filteredNotes = notePad.filterNotesByQuery(event.target.value);
-    renderNoteList(noteList, filteredNotes);
+    renderNoteList(refs.noteList, filteredNotes);
   };
   
   
-  formNoteEditor.addEventListener('submit', createNote);
-  noteList.addEventListener('click', removeListItem);
-  searchInput.addEventListener('input', filterNotes);
+
   
   
   
