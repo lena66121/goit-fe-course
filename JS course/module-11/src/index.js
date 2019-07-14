@@ -1,11 +1,11 @@
 import './sass/main.scss';
-import {renderNoteList, refs} from './js/view'
-import {createNote, removeListItem, filterNotes, notePad} from './js/app';
+import {refs} from './js/view'
+import {createNote, removeListItem, filterNotes, handleOpenModal} from './js/app';
 
 
-renderNoteList(refs.noteList, notePad.notes);
-
-
-refs.formNoteEditor.addEventListener('submit', createNote);
+refs.saveNoteBtn.addEventListener('click', createNote);
 refs.noteList.addEventListener('click', removeListItem);
 refs.searchInput.addEventListener('input', filterNotes);
+refs.addNoteBtn.addEventListener('click', handleOpenModal)
+
+
