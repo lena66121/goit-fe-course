@@ -6,11 +6,16 @@ import Notepad from './notepad-model';
 import initialNotes from '../assets/notes.json';
 import {refs, createTemplateOfNotes} from './view';
 import { NOTIFICATION_MESSAGES } from './utils/constants';
- 
-export const notePad = new Notepad(initialNotes); 
+import storage from "./storage";
+
+const storageNotes = storage.load("notes");
+export const initNotes = storageNotes ? storageNotes : initialNotes;
+
+export const notePad = new Notepad(initNotes); 
+
 const notyf = new Notyf();
 MicroModal.init();
-localStorage.setItem('notes', JSON.stringify(initialNotes));
+//localStorage.setItem('notes', JSON.stringify(initialNotes));
   
   //---- handlers functions ----
   
@@ -47,7 +52,7 @@ export  const createNote = event => {
     notePad
     .saveNote(newNote)
     .then(savedNote  => {
-      localStorage.setItem('notes', JSON.stringify(notePad.notes));
+      storage.save('notes', notePad.notes);
       refs.formNoteEditor.reset();
       addListItem(refs.noteList, newNote);
       notyf.success(NOTIFICATION_MESSAGES.NOTE_ADDED_SUCCESS);
@@ -65,7 +70,7 @@ export  const removeListItem = (event) => {
     notePad
     .deleteNote(id)
     .then(() => {
-      localStorage.setItem('notes', JSON.stringify(notePad.notes));
+      storage.save('notes', notePad.notes);
       const markup = createTemplateOfNotes(notePad.notes);
       refs.noteList.innerHTML = markup;
       notyf.success(NOTIFICATION_MESSAGES.NOTE_DELETED_SUCCESS);

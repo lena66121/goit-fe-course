@@ -1,5 +1,5 @@
 import noteTemplate from '../templates/notes.hbs';
-import initialNotes from '../assets/notes.json';
+import {initNotes} from './app'
 
 
 export const refs = {
@@ -19,7 +19,7 @@ export const createTemplateOfNotes = (notes) => {
   return notesTemplate;
 }
 
-const notesTemplate = createTemplateOfNotes(initialNotes);
+const notesTemplate = createTemplateOfNotes(initNotes);
 
 refs.noteList.insertAdjacentHTML('beforeend', notesTemplate)
 
